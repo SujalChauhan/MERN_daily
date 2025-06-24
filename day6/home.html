@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Home</h1>
+    <!-- <a href="dom/index.html">index</a> -->
+<button id="loginBtn">Login</button>
+<p id="statusMsg"></p>
+
+<script>
+    const btn = document.getElementById("loginBtn");
+    const statusMsg = document.getElementById("statusMsg");
+
+    let isLoggedIn = false;
+
+    btn.addEventListener("click", () => {
+        isLoggedIn = !isLoggedIn;
+        btn.textContent = isLoggedIn ? "Logout" : "Login";
+        statusMsg.textContent = isLoggedIn 
+            ? "🎉 You are now logged in!" 
+            : "👋 You’ve been logged out.";
+});
+
+</script>
+</body>
+</html>

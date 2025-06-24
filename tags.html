@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Major HTML Tags Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    header, nav, main, section, article, aside, footer {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    nav ul { list-style: none; padding: 0; display: flex; gap: 10px; }
+    nav a { text-decoration: none; color: blue; }
+    table, th, td { border: 1px solid black; border-collapse: collapse; padding: 5px; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to HTML Tags Demo</h1>
+    <p>This project showcases major HTML tags in action.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#text">Text</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#table">Table</a></li>
+      <li><a href="#form">Form</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <main>
+    <section id="text">
+      <h2>Text Elements</h2>
+      <p>This is a <strong>paragraph</strong> with <em>emphasis</em>, <u>underline</u>, and <mark>highlight</mark>.</p>
+      <blockquote cite="https://www.example.com">"This is a blockquote."</blockquote>
+      <pre>
+function hello() {
+  console.log("Hello World");
+}
+      </pre>
+      <code>&lt;div&gt;This is code&lt;/div&gt;</code>
+      <br><hr>
+    </section>
+
+    <section id="media">
+      <h2>Media Elements</h2>
+      <img src="https://via.placeholder.com/150" alt="Placeholder image">
+      <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <video width="320" height="240" controls>
+        <source src="sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section id="table">
+      <h2>Table</h2>
+      <table>
+        <caption>Sample Table</caption>
+        <thead>
+          <tr><th>Name</th><th>Age</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Sujal</td><td>21</td></tr>
+          <tr><td>Anita</td><td>19</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="form">
+      <h2>Form</h2>
+      <form action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+    <article>
+      <h2>Article</h2>
+      <p>This is an independent article within the main content.</p>
+    </article>
+
+    <aside>
+      <h2>Aside Section</h2>
+      <p>This contains related information or ads.</p>
+    </aside>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 HTML Demo Project. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
